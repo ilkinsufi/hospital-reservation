@@ -283,7 +283,11 @@ nextBtn.addEventListener("click", () => {
     notePrice.textContent = " $" + generalData.price;
     noteDate.textContent = `${generalData.date}/${generalData.time}`;
   }
-
+  generalData.customer.name = nameinp.value;
+  generalData.customer.surname = surnameinp.value;
+  generalData.customer.email = einp.value;
+  generalData.customer.phone = telinp.value;
+  console.clear();
   console.log(generalData);
 });
 
