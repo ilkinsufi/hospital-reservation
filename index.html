@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Ilkin Mammadov" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Ilkin Mammadov</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rectangle">
+        <div class="sidebar">
+          <ul class="sidebarSteps">
+            <li id="staffTab" class=""><span>1</span> Staff</li>
+            <li id="serviceTab" class=""><span>2</span> Service</li>
+            <li id="dateTab"><span>3</span> Date & Time</li>
+            <li id="confirmationTab" class=""><span>4</span> Confirmation</li>
+          </ul>
+          <div class="sidebarFooter"></div>
+        </div>
+        <div class="content">
+          <div class="contentTitle">
+            <div class="contentMainTitle">Title</div>
+            <img src="/images/cross.png" alt="cross" />
+          </div>
+          <div class="contentContainer">
+            <div id="staffContent" class="step">
+              <!-- <div class="staff">
+                <div class="staffImage">
+                  <img src="./images/doctor1.png" alt="" />
+                </div>
+                <div class="staffDetails">
+                  <p>Ilkin Mammadli</p>
+                  <span>ilkin@gmail.com</span>
+                </div>
+              </div> -->
+            </div>
+            <div id="serviceContent" class="step">
+              <!-- <div class="service">
+                <div class="serviceImage">
+                  <img src="./images/doctor1.png" alt="" />
+                </div>
+                <div class="serviceDetails">
+                  <p>Ilkin</p>
+                  <span>ilkin@gmail.com</span>
+                </div>
+              </div> -->
+            </div>
+            <div id="dateContent" class="step">
+              <date-picker format="MMMM DD (DDD), YYYY"></date-picker>
+            </div>
+            <div id="confirmContent" class="step">
+              <div class="confirmAllInput">
+                <div class="confirmInput">
+                  <p>First name <span>*</span></p>
+                  <input class="nameinp" required type="text" />
+                </div>
+                <div class="confirmInput">
+                  <p>Last name <span>*</span></p>
+                  <input class="surnameinp" required type="text" />
+                </div>
+                <div class="confirmInput">
+                  <p>Email<span> *</span></p>
+                  <input class="einp" required type="email" />
+                </div>
+                <div class="confirmInput">
+                  <p>Phone</p>
+                  <input class="telinp" required type="tel" />
+                </div>
+              </div>
+              <span>Note</span>
+              <div class="note">
+                <ul>
+                  <li>Staff: <span id="noteStaff">Alexy</span></li>
+                  <li>Service: <span id="noteService">Alexy</span></li>
+                  <li>Date: <span id="noteDate">Alexy</span></li>
+                  <li>Price: <span id="notePrice">123</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contentFooter">
+            <button class="backBtn">BACK</button>
+            <button class="warningBtn">
+              <img src="./images/error.png" alt="error" />
+            </button>
+            <button class="nextBtn">NEXT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="datePicker.js"></script>
+  </body>
+</html>
